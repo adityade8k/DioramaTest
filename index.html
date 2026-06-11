@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scene Walkthrough</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="scene-canvas" aria-label="3D walkthrough viewport"></canvas>
+
+    <div class="hud" aria-hidden="true">
+      <div class="reticle"></div>
+      <div class="status" id="status">Press Space to lock controls</div>
+      <div class="keys">
+        <span>W</span>
+        <span>A</span>
+        <span>S</span>
+        <span>D</span>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
